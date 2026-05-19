@@ -1,0 +1,15 @@
+.history-container { max-width: 1100px; margin: 0 auto; padding: 28px; }
+.history-filters { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 20px; }
+.filter-btn { padding: 5px 13px; border-radius: 20px; border: 1px solid var(--border); background: var(--surface); font-size: 12px; cursor: pointer; transition: all .15s; font-family: var(--sans); }
+.filter-btn:hover, .filter-btn.active { background: var(--accent); color: #fff; border-color: var(--accent); }
+.history-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 14px; }
+.history-card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); overflow: hidden; cursor: pointer; transition: all .2s; }
+.history-card:hover { transform: translateY(-2px); box-shadow: var(--shadow-lg); border-color: var(--accent); }
+.hc-top { padding: 14px 16px; }
+.hc-algo { font-family: var(--mono); font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: .06em; color: var(--accent); margin-bottom: 4px; }
+.hc-func { font-family: var(--mono); font-size: 12px; margin-bottom: 10px; }
+.hc-meta { display: flex; gap: 12px; flex-wrap: wrap; font-size: 11px; color: var(--text2); }
+.hc-meta strong { color: var(--text); }
+.hc-footer { padding: 8px 16px; border-top: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; font-size: 11px; color: var(--text3); }
+@media (max-width: 800px) { .history-grid { grid-template-columns: repeat(2,1fr); } }
+@media (max-width: 500px) { .history-grid { grid-template-columns: 1fr; } }

@@ -1,0 +1,15 @@
+.about-container { max-width: 820px; margin: 0 auto; padding: 48px 28px; }
+.about-section { margin-bottom: 44px; }
+.about-h2 { font-family: var(--display); font-size: 20px; font-weight: 600; margin-bottom: 14px; padding-bottom: 8px; border-bottom: 1px solid var(--border); }
+.about-p { color: var(--text2); line-height: 1.8; font-weight: 300; font-size: 14px; }
+.tech-list { display: flex; flex-wrap: wrap; gap: 8px; }
+.tech-pill { padding: 4px 12px; border-radius: 20px; border: 1px solid var(--border); font-family: var(--mono); font-size: 11px; color: var(--text2); background: var(--surface); }
+.arch-grid { display: grid; grid-template-columns: repeat(4,1fr); gap: 12px; }
+.arch-card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 16px; }
+.arch-letter { font-family: var(--display); font-size: 32px; font-weight: 600; color: var(--accent); margin-bottom: 6px; }
+.arch-title { font-weight: 600; font-size: 13px; margin-bottom: 6px; }
+.arch-desc { font-size: 11px; color: var(--text2); line-height: 1.5; }
+.algo-list-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+.algo-list-item { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 10px 14px; display: flex; align-items: center; gap: 12px; }
+.ali-icon { font-family: var(--mono); font-size: 16px; color: var(--accent); width: 24px; text-align: center; }
+@media (max-width: 700px) { .arch-grid { grid-template-columns: repeat(2,1fr); } .algo-list-grid { grid-template-columns: 1fr; } }
